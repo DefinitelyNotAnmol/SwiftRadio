@@ -34,7 +34,7 @@ let stationDataURL   = "http://yoururl.com/json/stations.json"
 //**************************************
 
 // Set this to "true" to enable the search bar
-let searchable = false
+let searchable = true
 
 //**************************************
 // NEXT / PREVIOUS BUTTONS
@@ -48,4 +48,4 @@ let hideNextPreviousButtons = true
 //**************************************
 
 // Set this to "true" to hide the AirPlay button
-let hideAirPlayButton = false
+let hideAirPlayButton = true
