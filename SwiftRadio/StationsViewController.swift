@@ -157,7 +157,10 @@ class StationsViewController: UIViewController {
             
             // Turn off network indicator in status bar
             defer {
-                DispatchQueue.main.async { UIApplication.shared.isNetworkActivityIndicatorVisible = false }
+                DispatchQueue.main.async {
+                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                    
+                }
             }
             
             if kDebugLog { print("Stations JSON Found") }
@@ -166,7 +169,7 @@ class StationsViewController: UIViewController {
                 if kDebugLog { print("JSON Station Loading Error") }
                 return
             }
-            
+
             self.stations = stationsArray
         }
     }

@@ -27,11 +27,21 @@ struct DataManager {
                     success(nil)
                     return
                 }
-                
+
                 loadDataFromURL(url: stationDataURL) { data, error in
                     success(data)
                 }
             }
+            
+//            guard let stationDataURL = URL(string: "http://api.shoutcast.com/legacy/Top500?U9NTufGQ87Biyamw") else {
+//                if kDebugLog { print("stationDataURL not a valid URL") }
+//                success(nil)
+//                return
+//            }
+//
+//            loadDataFromURL(url: stationDataURL) { data, error in
+//                success(data)
+//            }
         }
     }
     

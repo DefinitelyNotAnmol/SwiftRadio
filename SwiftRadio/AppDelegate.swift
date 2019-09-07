@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     weak var stationsViewController: StationsViewController?
+//    weak var uiTabBarViewController: DashboardTabBarController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -30,6 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Get weak ref of StationsViewController
         if let navigationController = window?.rootViewController as? UINavigationController {
             stationsViewController = navigationController.viewControllers.first as? StationsViewController
+//            uiTabBarViewController = navigationController.viewControllers.first as? DashboardTabBarController
+
         }
         
         return true

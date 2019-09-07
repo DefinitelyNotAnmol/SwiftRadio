@@ -238,7 +238,7 @@ class NowPlayingViewController: UIViewController {
         case .loading:
             message = "Loading Station ..."
         case .urlNotSet:
-            message = "Station URL not valide"
+            message = "Station URL not valid"
         case .readyToPlay, .loadingFinished:
             playbackStateDidChange(radioPlayer.playbackState, animate: animate)
             return
