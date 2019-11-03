@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:NoStoryBoard.xcodeproj">
+      location = "self:SwiftRadio.xcodeproj">
    </FileRef>
 </Workspace>
