@@ -10,6 +10,12 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Home")
+        ZStack {
+            Color.pink
+                .edgesIgnoringSafeArea(.all)
+
+            Text("Home")
+                .foregroundColor(.white)
+        }
     }
 }

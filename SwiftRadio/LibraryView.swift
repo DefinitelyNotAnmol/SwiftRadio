@@ -10,6 +10,11 @@ import SwiftUI
 
 struct LibraryView: View {
     var body: some View {
-        Text("Library")
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            Text("Library")
+                .foregroundColor(.white)
+        }
     }
 }
